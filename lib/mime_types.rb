@@ -1,0 +1,1 @@
+Mime::Type.register "application/x-amf", :amf
