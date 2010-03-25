@@ -1,13 +1,23 @@
 AmfController
 =============
 
-Introduction goes here.
-
+Adds a set of generic CRUD actions to controller
 
 Example
 =======
 
-Example goes here.
+class InvoicesController < ApplicationController
+ amf_controller
+end
 
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+class InvoicesController < ApplicationController
+ amf_controller :model => Report
+end
+
+class InvoicesController < ApplicationController
+ amf_controller :actions => [:read, :update]
+end
+
+
+Copyright (c) 2009 b.kosmowski@selleo.com [Stevo], released under the MIT license
